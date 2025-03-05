@@ -17,7 +17,7 @@ RUN mkdir -p /home/ros2_ws/src
 WORKDIR /home/ros2_ws
 
 # Copy the package source code to the workspace
-COPY src src/
+COPY ./src src/
 
 # Install dependencies
 RUN rosdep install --from-paths src --ignore-src -r -y
